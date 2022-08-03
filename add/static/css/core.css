@@ -1,0 +1,18 @@
+
+#con2{
+    margin-top: 20px;
+}
+.cl{
+    background-color: palevioletred;
+    text-align:center;
+}
+.cll{
+    background-color: aquamarine;
+    text-align:center;
+}
+.table,tr,th,td{
+    border: 1px solid black;
+}
+.lnk{
+    text-decoration: none;
+}

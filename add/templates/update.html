@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update</title>
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/core.css' %}">
+</head>
+<body>
+    <div class="container" >
+        <div class="row mt-4 ">
+            <div class="col-4">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <input type="submit" class="btn btn-success"  value='Save'>
+                </form>
+        </div>  <br>
+        <h2>
+        <a class ="lnk" href="{% url 'home' %}">Back to Home</a> 
+       </h2>
+    </div>
+</body>
+</html>
